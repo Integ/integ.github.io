@@ -1,7 +1,9 @@
 ## Welcome to my GitHub Pages
 
-I am a data scientist at [ViceCity](https://vice.city).
+I am a data scientist at [ViceCity](http://vice.city).
+
 Live with my wonderful girlfriend and an adorable cat Schrödinger.
+
 Here is a list of my open source projects.
 
 ### Web App
