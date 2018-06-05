@@ -8,10 +8,11 @@ Here is a list of my open source projects.
 
 ### Web App
 
-- [BachEditor](https://app.integ.ml/bacheditor) - Markdown Edior with music.
-- [WeShot](https://app.integ.ml/weshot) - web Dan Mu
-- [RokidWebhook](https://app.integ.ml/rokid) - Rokid Webhook API
-- [KindleBrowser](https://app.integ.ml/kindle) - Kindle Browser Js Eval
+- [WechatRepublic](https://github.com/ChillingEffect/wechat-republic) - Wechat translate robot
+- [BachEditor](https://app.integ.ml/bacheditor) - Markdown Edior with music
+- [WeShoot](https://github.com/Integ/WeShoot) - Chrome extension for Wechat DanMu support
+- [RokidWebhook](https://app.integ.ml/rokid) - Rokid Webhook API Demo
+- [KindleBrowser](https://app.integ.ml/kindle) - Kindle Browser Js Eval Tool
 
 ### Other
 
