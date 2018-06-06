@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Rokid Webhook Tool- Integ</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=d97f81ed917373d0af77148fc9b68b4fc0c14e2c">
+
+<!-- Begin Jekyll SEO tag v2.4.0 -->
+<meta name="generator" content="Jekyll v3.7.3">
+<meta property="og:title" content="Welcome to my GitHub Pages">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="Happy Hacking!">
+<meta property="og:description" content="Happy Hacking!">
+<link rel="canonical" href="https://integ.ml/">
+<meta property="og:url" content="https://integ.ml/">
+<meta property="og:site_name" content="integ.github.io">
+<script type="application/ld+json">
+{"name":"integ.github.io","description":"Happy Hacking!","@type":"WebSite","url":"https://integ.ml/","headline":"Welcome to my GitHub Pages","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+</head>
+
+<body>
+    <canvas id="canvas" height="300"></canvas>
+    <input type="text" size="35" id="rokidSN" placeholder="ROKID_SN e.g. 0001121743000214" />
+    <input type="text" size="35" id="rokidWebhook" placeholder="ROKID_WEBHOOK e.g. rJTmCO9k7" />
+    <div>
+        <textarea id="textarea" rows="6" placeholder="SSML surported, more info at https://github.com/Rokid/docs/blob/master/2-RokidDocument/1-SkillsKit/ssml-document.md" cols="100"></textarea>
+        <button id="rokidTTS">Rokid TTS</button>
+    </div>
+    <div>
+        <input id="input" size="85" placeholder="e.g. http://integ.b0.upaiyun.com/StarWars.mp3"></input>
+        <button id="rokidAudio">Rokid Audio</button>
+    </div>
+    <ul id="log"></ul>
+
+    <script>
+    function run() {
+        const HEIGHT = 300;
+        var WIDTH = document.body.clientWidth;
+
+        var audioCtx = new AudioContext();
+        var analyser = audioCtx.createAnalyser();
+        analyser.fftSize = 8192;
+        var bufferLength = analyser.frequencyBinCount;
+        var dataArray = new Uint8Array(bufferLength);
+
+        var constraints = { audio: true };
+        var promise = navigator.mediaDevices.getUserMedia(constraints);
+        promise.then(function (stream) {
+            var source = audioCtx.createMediaStreamSource(stream);
+            source.connect(analyser);
+        }).catch(function (err) {
+            alert("need your promise!");
+        });
+        
+        var canvas = document.getElementById("canvas");
+        var canvasCtx = canvas.getContext("2d");
+        canvasCtx.clearRect(0, 0, WIDTH, HEIGHT);
+        
+        window.addEventListener('resize', resizeCanvas, false);
+
+        function resizeCanvas() {
+            canvas.width = document.body.clientWidth;
+            canvas.height = HEIGHT;
+
+            /**
+             * Your drawings need to be inside this function otherwise they will be reset when 
+             * you resize the browser window and the canvas goes will be cleared.
+             */
+            draw(); 
+        }
+
+        resizeCanvas();
+
+        function draw() {
+            drawVisual = requestAnimationFrame(draw);
+
+            analyser.getByteFrequencyData(dataArray);
+
+            canvasCtx.fillStyle = 'rgb(255, 255, 255)';
+            canvasCtx.fillRect(0, 0, WIDTH, HEIGHT);
+
+            var barWidth = (WIDTH / bufferLength) * 2.5;
+            var barHeight;
+            var x = 0;
+
+            for (var i = 0; i < bufferLength; i++) {
+                barHeight = dataArray[i];
+
+                canvasCtx.fillStyle = 'rgba(255,0,0,' + barHeight/200 + ')';
+                canvasCtx.fillRect(x, HEIGHT - barHeight, barWidth, barHeight);
+
+                x += barWidth + 1;
+            }
+        };
+    };
+    run();
+    
+    const ROKID_SN = document.querySelector('rokidSN').value || "0001121743000214";
+    const ROKID_WEBHOOK = document.querySelector('rokidWebhook').value || "rJTmCO9k7";   
+    const ROKID_URL = `https://homebase.rokid.com/trigger/with/${ROKID_WEBHOOK}`;
+    document.querySelector('button#rokidTTS').addEventListener('click', (e) => {
+        const text = document.querySelector('#textarea').value;
+        let data = {
+                type: "tts",
+                devices: {
+                    sn: ROKID_SN
+                },
+                data: {
+                    text
+                }
+            };
+        fetch(ROKID_URL, {
+            method: 'post',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        }).then(res => res.json()).then(json => {
+            console.log(json);
+            if (json.ok) {
+                document.querySelector('#textarea').value = '';
+                const logWrap = document.querySelector('#log');
+                const log = `<li>[TTS] ${text}</li>`;
+                logWrap.insertAdjacentHTML('beforeend', log);
+            }
+        });
+    });
+    document.querySelector('button#rokidAudio').addEventListener('click', (e) => {
+        const url = document.querySelector('#input').value;
+        let data = {
+                type: "audio",
+                devices: {
+                    sn: ROKID_SN
+                },
+                data: {
+                    url
+                }
+            };
+        fetch(ROKID_URL, {
+            method: 'post',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        }).then(res => res.json()).then(json => {
+            console.log(json);
+            if (json.ok) {
+                document.querySelector('#input').value = '';
+                const logWrap = document.querySelector('#log');
+                const log = `<li>[Audio] ${url}</li>`;
+                logWrap.insertAdjacentHTML('beforeend', log);
+            }
+        });
+    });
+    </script>
+</body>
+
+</html>

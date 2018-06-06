@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Kindle Javascript Evalor - Integ</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=d97f81ed917373d0af77148fc9b68b4fc0c14e2c">
+
+<!-- Begin Jekyll SEO tag v2.4.0 -->
+<meta name="generator" content="Jekyll v3.7.3">
+<meta property="og:title" content="Welcome to my GitHub Pages">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="Happy Hacking!">
+<meta property="og:description" content="Happy Hacking!">
+<link rel="canonical" href="https://integ.ml/">
+<meta property="og:url" content="https://integ.ml/">
+<meta property="og:site_name" content="integ.github.io">
+<script type="application/ld+json">
+{"name":"integ.github.io","description":"Happy Hacking!","@type":"WebSite","url":"https://integ.ml/","headline":"Welcome to my GitHub Pages","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+</head>
+
+<body>
+    <textarea id='cmd' rows="3" , cols='44'>window.navigator.userAgent</textarea>
+    <button id='run'>Run</button>
+    <button id='clear'>Clear</button>
+    <h3>Result</h3>
+    <div>
+        <p id="console"></p>
+    </div>
+    <h3>Error Info</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Message</th>
+                <th width="100">Source</th>
+                <th width="100">LineNo</th>
+                <th width="100">ColNo</th>
+                <th width="100">ErrorObj</th>
+            </tr>
+        </thead>
+        <tbody id='error'></tbody>
+    </table>
+    <script>
+        window.onerror = function (message, source, lineno, colno, error) {
+            var html = '<tr>\
+                    <td>' + message + '</td>\
+                    <td>' + source + '</td>\
+                    <td>' + lineno + '</td>\
+                    <td>' + colno + '</td>\
+                    <td>' + error + '</td>\
+                </tr>';
+            document.getElementById('error').innerHTML = html;
+        };
+
+        var textarea = document.getElementById('cmd')
+        document.getElementById('run').addEventListener('click', function (e) {
+            var cmd = textarea.value;
+            var result = eval(cmd);
+            if (typeof result === 'object') {
+                result = jsonify(result);
+            }
+            document.getElementById('console').innerText = result;
+        });
+        document.getElementById('clear').addEventListener('click', function (e) {
+            textarea.value = '';
+        });
+        if (sessionStorage.getItem("autosave")) {
+            // 恢复文本输入框的内容
+            textarea.value = sessionStorage.getItem("autosave");
+        }
+        textarea.addEventListener("change", function () {
+            // 保存结果到 sessionStorage 对象中
+            sessionStorage.setItem("autosave", textarea.value);
+        });
+
+        var jsonify = function (obj) {
+            seen = [];
+
+            var replacer = function (key, value) {
+                if (value != null && typeof value == "object") {
+                    if (seen.indexOf(value) >= 0) {
+                        return;
+                    }
+                    seen.push(value);
+                }
+                return value;
+            };
+
+            return JSON.stringify(obj, replacer);
+        };
+    </script>
+</body>
+
+</html>
