@@ -23,26 +23,28 @@
 </head>
 
 <body>
-    <textarea id='cmd' rows="3" , cols='44'>window.navigator.userAgent</textarea>
-    <button id='run'>Run</button>
-    <button id='clear'>Clear</button>
-    <h3>Result</h3>
-    <div>
-        <p id="console"></p>
+    <div class="container">
+        <textarea id='cmd' rows="3" , cols='44'>window.navigator.userAgent</textarea>
+        <button id='run'>Run</button>
+        <button id='clear'>Clear</button>
+        <h3>Result</h3>
+        <div>
+            <p id="console"></p>
+        </div>
+        <h3>Error Info</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Message</th>
+                    <th width="100">Source</th>
+                    <th width="100">LineNo</th>
+                    <th width="100">ColNo</th>
+                    <th width="100">ErrorObj</th>
+                </tr>
+            </thead>
+            <tbody id='error'></tbody>
+        </table>
     </div>
-    <h3>Error Info</h3>
-    <table>
-        <thead>
-            <tr>
-                <th>Message</th>
-                <th width="100">Source</th>
-                <th width="100">LineNo</th>
-                <th width="100">ColNo</th>
-                <th width="100">ErrorObj</th>
-            </tr>
-        </thead>
-        <tbody id='error'></tbody>
-    </table>
     <script>
         window.onerror = function (message, source, lineno, colno, error) {
             var html = '<tr>\
