@@ -1,8 +1,9 @@
 ## About Me
 
-My name is [Integ](https://github.com/Integ), I am a remote web developer/data engineer of [ViceCity](http://vice.city).
+I am [Integ](https://github.com/Integ), a remote web developer/data engineer of [ViceCity](http://vice.city).
+An Arch Linux fan, open source lover, MOOC enthusiast.
 
-Living in China with my wonderful girlfriend [Adele](https://adede.ml) and an adorable cat [Schrödinger](https://photos.app.goo.gl/PA9k623hd6V7oSvd7).
+Living in China with my lovely girlfriend illustrator [Adele](https://adede.ml) and an adorable cat [Schrödinger](https://photos.app.goo.gl/PA9k623hd6V7oSvd7).
 
 Some of my open source projects list bellow:
 
