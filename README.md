@@ -24,6 +24,6 @@ Some of my open source projects list bellow:
 - [Remote Only](https://integ.ml/remoteonly) - The Chinese translation of [www.remoteonly.org](https://www.remoteonly.org)
 - [F2EM](https://integ.ml/f2em) - The Chinese Translation of [f2em.com](https://f2em.com)
 
-### Support or Contact
+### Contact
 
-Having any question? Just leave an issue, and I’ll help you sort it out.
+Having any question? please send a short email to __integ @ this domain__, I will reply ASAP.
