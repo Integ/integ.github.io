@@ -17,7 +17,7 @@ Here is a list of my open source projects.
 ### Other
 
 - [FMS](https://github.com/integ/FMS) - an UAV
-- [Remote Only](https://integ.ml/remoteonly) - The Chinese translation of https://www.remoteonly.org
+- [Remote Only](https://integ.ml/remoteonly) - The Chinese translation of [www.remoteonly.org](https://www.remoteonly.org)
 
 ### Support or Contact
 
