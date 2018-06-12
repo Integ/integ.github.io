@@ -1,22 +1,25 @@
-## Welcome to my GitHub Pages
+## About Me
 
-I am a data scientist at [ViceCity](http://vice.city).
+I am a web developer/data engineer of [ViceCity](http://vice.city).
 
-Live with my wonderful girlfriend and an adorable cat Schrödinger.
+Live in China with my wonderful girlfriend [Adele](https://adede.ml) and an adorable cat [Schrödinger](https://photos.app.goo.gl/PA9k623hd6V7oSvd7).
 
-Here is a list of my open source projects.
+Some of my open source projects list bellow:
+
+### Data
+
+- [WechatRepublic](https://github.com/ChillingEffect/wechat-republic) - A Wechat translate robot
 
 ### Web App
 
-- [WechatRepublic](https://github.com/ChillingEffect/wechat-republic) - Wechat translate robot
-- [BachEditor](https://integ.ml/BachEditor) - Markdown Edior with music
+- [BachEditor](https://integ.ml/BachEditor) - A online markdown edior
 - [WeShoot](https://github.com/Integ/WeShoot) - Chrome extension for Wechat DanMu support
 - [Rokid Webhook Tool](https://integ.ml/rokid) - Rokid Webhook API Tool
 - [Kindle Js Eval Tool](https://integ.ml/kindle) - Kindle Browser Javascript Eval Tool
 
 ### Other
 
-- [FMS](https://github.com/integ/FMS) - an UAV
+- [FMS](https://github.com/integ/FMS) - an UAV design.
 - [Remote Only](https://integ.ml/remoteonly) - The Chinese translation of [www.remoteonly.org](https://www.remoteonly.org)
 - [F2EM](https://integ.ml/f2em) - The Chinese Translation of [f2em.com](https://f2em.com)
 
