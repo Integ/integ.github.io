@@ -1,6 +1,6 @@
 ## About Me
 
-I am a web developer/data engineer of [ViceCity](http://vice.city).
+My name is [Integ](https://github.com/Integ), I am a web developer/data engineer of [ViceCity](http://vice.city).
 
 Live in China with my wonderful girlfriend [Adele](https://adede.ml) and an adorable cat [Schrödinger](https://photos.app.goo.gl/PA9k623hd6V7oSvd7).
 
