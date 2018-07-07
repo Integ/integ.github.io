@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/integj
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://integ.ml
+  * I am integj (https://keybase.io/integj) on keybase.
+  * I have a public key ASBj7a9i6GfoWNIvzisXrSxT0quInNcWAxH1vCVerBECkAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01202379c7cc44122f9ef7ba7855b1a80634e10358469e1db9137b3ebbbc0917ae880a",
+      "host": "keybase.io",
+      "kid": "012063edaf62e867e858d22fce2b17ad2c53d2ab889cd7160311f5bc255eac1102900a",
+      "uid": "29d80f43397fef1ad64e9cd20251ad19",
+      "username": "integj"
+    },
+    "merkle_root": {
+      "ctime": 1530946030,
+      "hash": "0b3bde2faea2fe4df92f613c04a103f487c1c1676cc16fe04c4edd0d00ff5c355ce15b069de3e2dfe6492296d0960e8e75ad1cbd05d6f27d5c24c36778456374",
+      "hash_meta": "906a7425ba89ec542b64091826f6a05fadb16bd8b490f2e625da0c0bd19bce96",
+      "seqno": 3212620
+    },
+    "service": {
+      "entropy": "ZXoLZetwyyyzBSSoLwOhWuaF",
+      "hostname": "integ.ml",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.3.0"
+  },
+  "ctime": 1530946110,
+  "expire_in": 504576000,
+  "prev": "305745d1467ed94d017c62f89f2beac3a0c1a7c8d0d8d6abd7138317daea1d97",
+  "seqno": 12,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgY+2vYuhn6FjSL84rF60sU9KriJzXFgMR9bwlXqwRApAKp3BheWxvYWTESpcCDMQgMFdF0UZ+2U0BfGL4nyvqw6DBp8jQ2Nar1xODF9rqHZfEICi0j/hgGPX1igf7dxWq9UvMhEwwqLe0VTkbagGBtRHiAgHCo3NpZ8RA0i8uy6NWkRQ4gmYYqT24fXYdMM6mqbudPORDgXavUZ004XjEgY0AYGNFCIaEVCsCHxml4gvCD5rgb7roF4ojC6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIP6ADTVA/4kgPzODhLStGu/8cROh12/lbZTXN40G5adGo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/integj
+
+==================================================================
