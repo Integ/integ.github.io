@@ -3,7 +3,7 @@
 My name is Jiang Shang, aka [Integ](https://github.com/Integ), a remote web developer/data engineer of [ViceCity](http://vice.city).
 An Arch Linux fan, open source lover, MOOC enthusiast.
 
-Living in China with my lovely girlfriend illustrator [Adele](https://adede.ml) and an adorable cat [Schrödinger](https://photos.app.goo.gl/PA9k623hd6V7oSvd7).
+Living in China with my lovely girlfriend illustrator [Adele](https://junlan.ml) and an adorable cat [Schrödinger](https://photos.app.goo.gl/PA9k623hd6V7oSvd7).
 
 Some of my open source projects list bellow:
 
@@ -20,7 +20,7 @@ Some of my open source projects list bellow:
 
 ### Other
 
-- [FMS](https://github.com/integ/FMS) - an UAV design.
+- [FMS](https://github.com/integ/FMS) - an UAV.
 - [Remote Only](https://integ.ml/remoteonly) - The Chinese translation of [www.remoteonly.org](https://www.remoteonly.org)
 - [F2EM](https://integ.ml/f2em) - The Chinese Translation of [f2em.com](https://f2em.com)
 
