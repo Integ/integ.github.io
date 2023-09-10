@@ -13,16 +13,16 @@ Some of my open source projects list bellow:
 
 ### Web App
 
-- [BachEditor](https://integ.ml/BachEditor) - A online markdown edior
+- [BachEditor](https://integ.cf/BachEditor) - A online markdown edior
 - [WeShoot](https://github.com/Integ/WeShoot) - Chrome extension for Wechat DanMu support
-- [Rokid Webhook Tool](https://integ.ml/rokid) - Rokid Webhook API Tool
-- [Kindle Js Eval Tool](https://integ.ml/kindle) - Kindle Browser Javascript Eval Tool
+- [Rokid Webhook Tool](https://integ.cf/rokid) - Rokid Webhook API Tool
+- [Kindle Js Eval Tool](https://integ.cf/kindle) - Kindle Browser Javascript Eval Tool
 
 ### Other
 
 - [FMS](https://github.com/integ/FMS) - an UAV.
-- [Remote Only](https://integ.ml/remoteonly) - The Chinese translation of [www.remoteonly.org](https://www.remoteonly.org)
-- [F2EM](https://integ.ml/f2em) - The Chinese Translation of [f2em.com](https://f2em.com)
+- [Remote Only](https://integ.cf/remoteonly) - The Chinese translation of [www.remoteonly.org](https://www.remoteonly.org)
+- [F2EM](https://integ.cf/f2em) - The Chinese Translation of [f2em.com](https://f2em.com)
 
 ### Contact
 
