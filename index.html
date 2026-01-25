@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integ // Happy Hacking!</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="matrix-bg"></div>
+    
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">&gt; integ.cf</div>
+            <div class="nav-menu">
+                <a href="#projects" class="nav-link">projects</a>
+                <a href="#about" class="nav-link">about</a>
+                <a href="#contact" class="nav-link">contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="terminal">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <span class="btn close"></span>
+                        <span class="btn minimize"></span>
+                        <span class="btn maximize"></span>
+                    </div>
+                    <div class="terminal-title">integ@local:~$</div>
+                </div>
+                <div class="terminal-body">
+                    <div class="terminal-line">
+                        <span class="prompt">$</span>
+                        <span class="command">whoami</span>
+                    </div>
+                    <div class="output">
+                        <h1>姜上 / Integ</h1>
+                        <p class="subtitle">Remote Web Developer & Data Engineer</p>
+                        <p class="typing-text">Happy Hacking! <span class="cursor">|</span></p>
+                    </div>
+                    
+                    <div class="terminal-line">
+                        <span class="prompt">$</span>
+                        <span class="command">ls -la ~/skills</span>
+                    </div>
+                    <div class="output skills">
+                        <div class="skill-tag">JavaScript</div>
+                        <div class="skill-tag">TypeScript</div>
+                        <div class="skill-tag">Python</div>
+                        <div class="skill-tag">Node.js</div>
+                        <div class="skill-tag">Web Development</div>
+                        <div class="skill-tag">Data Engineering</div>
+                    </div>
+
+                    <div class="terminal-line">
+                        <span class="prompt">$</span>
+                        <span class="command">neofetch --stdout</span>
+                    </div>
+                    <div class="output neofetch">
+                        <div class="neofetch-content">
+                            <div class="ascii-art">
+╭─────────────────────────────────────╮
+│     <span class="green">●</span><span class="green">●</span><span class="red">●</span>    Integ System     <span class="red">●</span><span class="green">●</span><span class="green">●</span>     │
+│    <span class="green">●</span><span class="green">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="green">●</span><span class="green">●</span><span class="green">●</span>    │
+│   <span class="green">●</span><span class="green">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="green">●</span><span class="green">●</span>   │
+│   <span class="green">●</span><span class="green">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="green">●</span><span class="green">●</span>   │
+│   <span class="green">●</span><span class="green">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="green">●</span><span class="green">●</span>   │
+│    <span class="green">●</span><span class="green">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="green">●</span><span class="green">●</span>    │
+│     <span class="green">●</span><span class="green">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="red">●</span><span class="green">●</span><span class="green">●</span>     │
+╰─────────────────────────────────────╯
+                            </div>
+                            <div class="system-info">
+                                <div><span class="label">OS:</span> Arch Linux [rolling]</div>
+                                <div><span class="label">Shell:</span> zsh 5.8.1</div>
+                                <div><span class="label">Editor:</span> VSCode / Vim</div>
+                                <div><span class="label">Location:</span> Victoria, BC</div>
+                                <div><span class="label">Status:</span> <span class="green">● Online</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="section-header">
+                <h2><i class="fas fa-code-branch"></i> Recent Projects</h2>
+                <div class="terminal-line">
+                    <span class="prompt">$</span>
+                    <span class="command">curl https://api.github.com/users/integ/repos</span>
+                </div>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3><i class="fas fa-clock"></i> countdown</h3>
+                        <span class="project-lang">TypeScript</span>
+                    </div>
+                    <p>Full Screen Countdown application</p>
+                    <div class="project-stats">
+                        <span class="stars"><i class="fas fa-star"></i> 0</span>
+                        <span class="updated"><i class="fas fa-clock"></i> Jan 25, 2026</span>
+                    </div>
+                    <a href="https://github.com/Integ/countdown" target="_blank" class="project-link">View on GitHub</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3><i class="fas fa-museum"></i> museum</h3>
+                        <span class="project-lang">HTML</span>
+                    </div>
+                    <p>Geek Museum - 向经典致敬</p>
+                    <div class="project-stats">
+                        <span class="stars"><i class="fas fa-star"></i> 0</span>
+                        <span class="updated"><i class="fas fa-clock"></i> Jan 15, 2026</span>
+                    </div>
+                    <a href="https://github.com/Integ/museum" target="_blank" class="project-link">View on GitHub</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3><i class="fas fa-chart-line"></i> FinTrack</h3>
+                        <span class="project-lang">HTML</span>
+                    </div>
+                    <p>FinTrack - 您的个人财务管理助手</p>
+                    <div class="project-stats">
+                        <span class="stars"><i class="fas fa-star"></i> 0</span>
+                        <span class="updated"><i class="fas fa-clock"></i> Nov 15, 2025</span>
+                    </div>
+                    <a href="https://github.com/Integ/FinTrack" target="_blank" class="project-link">View on GitHub</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3><i class="fas fa-gamepad"></i> flight-yoke-webgame</h3>
+                        <span class="project-lang">JavaScript</span>
+                    </div>
+                    <p>Logitech flight yoke system test</p>
+                    <div class="project-stats">
+                        <span class="stars"><i class="fas fa-star"></i> 0</span>
+                        <span class="updated"><i class="fas fa-clock"></i> Nov 1, 2025</span>
+                    </div>
+                    <a href="https://github.com/Integ/flight-yoke-webgame" target="_blank" class="project-link">View on GitHub</a>
+                </div>
+
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <h3><i class="fas fa-edit"></i> BachEditor</h3>
+                        <span class="project-lang">JavaScript</span>
+                    </div>
+                    <p>一个有情怀的编辑器。Bach's Editor.</p>
+                    <div class="project-stats">
+                        <span class="stars"><i class="fas fa-star"></i> 354</span>
+                        <span class="updated"><i class="fas fa-clock"></i> Feb 24, 2019</span>
+                    </div>
+                    <a href="https://github.com/Integ/BachEditor" target="_blank" class="project-link">View on GitHub</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3><i class="fas fa-plug"></i> WeShoot</h3>
+                        <span class="project-lang">JavaScript</span>
+                    </div>
+                    <p>微信网页弹幕chrome插件</p>
+                    <div class="project-stats">
+                        <span class="stars"><i class="fas fa-star"></i> 38</span>
+                        <span class="updated"><i class="fas fa-clock"></i> Dec 5, 2017</span>
+                    </div>
+                    <a href="https://github.com/Integ/WeShoot" target="_blank" class="project-link">View on GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="section-header">
+                <h2><i class="fas fa-user"></i> About</h2>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-card">
+                    <h3>System Information</h3>
+                    <div class="terminal-line">
+                        <span class="prompt">$</span>
+                        <span class="command">cat ~/profile.txt</span>
+                    </div>
+                    <div class="output">
+                        <p>My name is Jiang Shang, aka <a href="https://github.com/Integ">Integ</a>, a remote web developer/data engineer at <a href="http://vice.city">ViceCity</a>.</p>
+                        <p>An <strong>Arch Linux fan</strong>, open source lover, MOOC enthusiast.</p>
+                        <p>Living in China with my lovely girlfriend illustrator <a href="https://dribbble.com/AdeleYa">Adele</a> and an adorable cat <a href="https://photos.app.goo.gl/PA9k623hd6V7oSvd7">Schrödinger</a>.</p>
+                    </div>
+                </div>
+
+                <div class="about-card">
+                    <h3>Interests & Technologies</h3>
+                    <div class="interests-grid">
+                        <div class="interest-item">
+                            <i class="fas fa-terminal"></i>
+                            <span>Terminal/CLI Tools</span>
+                        </div>
+                        <div class="interest-item">
+                            <i class="fas fa-robot"></i>
+                            <span>Machine Learning</span>
+                        </div>
+                        <div class="interest-item">
+                            <i class="fas fa-drone"></i>
+                            <span>UAV/Drone Development</span>
+                        </div>
+                        <div class="interest-item">
+                            <i class="fas fa-gamepad"></i>
+                            <span>Game Development</span>
+                        </div>
+                        <div class="interest-item">
+                            <i class="fas fa-palette"></i>
+                            <span>Creative Coding</span>
+                        </div>
+                        <div class="interest-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Mobile Development</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="section-header">
+                <h2><i class="fas fa-envelope"></i> Connect</h2>
+            </div>
+            
+            <div class="contact-content">
+                <div class="terminal-line">
+                    <span class="prompt">$</span>
+                    <span class="command">find /social -name "integ*"</span>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://github.com/Integ" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                        <small>@Integ</small>
+                    </a>
+                    <a href="mailto:integ@integ.cf" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                        <small>integ@integ.cf</small>
+                    </a>
+                    <a href="https://dribbble.com/AdeleYa" target="_blank" class="social-link">
+                        <i class="fab fa-dribbble"></i>
+                        <span>Dribbble (Partner)</span>
+                        <small>@AdeleYa</small>
+                    </a>
+                </div>
+
+                <div class="contact-form">
+                    <p>Having any question? Please send a short email to <strong>integ @ this domain</strong>, I will reply ASAP.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="terminal-line">
+                <span class="prompt">$</span>
+                <span class="command">echo "Happy Hacking!"</span>
+            </div>
+            <div class="output">
+                <p>&copy; 2026 Integ. Built with passion, coffee, and Linux.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
