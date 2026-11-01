@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Integ // Happy Hacking!</title>
+    <meta name="description" content="姜上 / Integ — Co-founder &amp; CTO of SPED Agent, building AI agents for special education.">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -13,8 +14,9 @@
     
     <header class="header">
         <nav class="nav">
-            <div class="nav-brand">&gt; integ.cf</div>
+            <div class="nav-brand">&gt; integ.eu.cc</div>
             <div class="nav-menu">
+                <a href="#ai" class="nav-link">ai</a>
                 <a href="#projects" class="nav-link">projects</a>
                 <a href="#about" class="nav-link">about</a>
                 <a href="#contact" class="nav-link">contact</a>
@@ -40,10 +42,20 @@
                     </div>
                     <div class="output">
                         <h1>姜上 / Integ</h1>
-                        <p class="subtitle">Remote Web Developer & Data Engineer</p>
+                        <p class="subtitle">Co-founder &amp; CTO @ <a href="https://spedagent.com" target="_blank">SPED Agent</a></p>
                         <p class="typing-text">Happy Hacking! <span class="cursor">|</span></p>
                     </div>
                     
+                    <div class="terminal-line">
+                        <span class="prompt">$</span>
+                        <span class="command">cat ~/work/now.txt</span>
+                    </div>
+                    <div class="output now-info">
+                        <div><span class="label">Role:</span> Co-founder &amp; CTO</div>
+                        <div><span class="label">Company:</span> <a href="https://spedagent.com" target="_blank">SPED Agent</a> — 让科技理解教育，让成长被看见</div>
+                        <div><span class="label">Building:</span> An AI work partner for special education schools — lesson prep, courseware, assessment and school-wide collaboration.</div>
+                    </div>
+
                     <div class="terminal-line">
                         <span class="prompt">$</span>
                         <span class="command">ls -la ~/skills</span>
@@ -55,6 +67,9 @@
                         <div class="skill-tag">Node.js</div>
                         <div class="skill-tag">Web Development</div>
                         <div class="skill-tag">Data Engineering</div>
+                        <div class="skill-tag">AI Agents</div>
+                        <div class="skill-tag">LLM Apps</div>
+                        <div class="skill-tag">Rust</div>
                     </div>
 
                     <div class="terminal-line">
@@ -78,11 +93,103 @@
                                 <div><span class="label">OS:</span> Arch Linux [rolling]</div>
                                 <div><span class="label">Shell:</span> zsh 5.8.1</div>
                                 <div><span class="label">Editor:</span> VSCode / Vim</div>
+                                <div><span class="label">Work:</span> SPED Agent</div>
                                 <div><span class="label">Location:</span> Victoria, BC</div>
                                 <div><span class="label">Status:</span> <span class="green">● Online</span></div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ai" class="projects ai-projects">
+            <div class="section-header">
+                <h2><i class="fas fa-robot"></i> AI Projects</h2>
+                <div class="terminal-line">
+                    <span class="prompt">$</span>
+                    <span class="command">ls ~/projects/ai</span>
+                </div>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3><i class="fas fa-microchip"></i> AgentOS</h3>
+                        <span class="project-lang">Rust</span>
+                    </div>
+                    <p>An operating system where agents are first-class citizens. Built on the Linux kernel, with a user-space agent layer: an intent bus, agent runtime, unified sensor/output abstractions, and a permission model based on capability tokens and risk levels. Plans with Claude, boots from a USB stick.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Linux</span>
+                        <span class="project-tag">Agent Runtime</span>
+                        <span class="project-tag">Claude API</span>
+                        <span class="project-tag">Policy Engine</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Integ/agentos" target="_blank" class="project-link">View on GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3><i class="fas fa-user-astronaut"></i> Rocky</h3>
+                        <span class="project-lang">Python</span>
+                    </div>
+                    <p>A long-running autonomous agent. Give it a goal, acceptance criteria and a scope; Rocky plans, calls tools, verifies its own deliverables against evidence, and keeps going across waits, restarts and human feedback. Native SwiftUI client for macOS.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Temporal</span>
+                        <span class="project-tag">SwiftUI</span>
+                        <span class="project-tag">Anthropic / OpenAI</span>
+                        <span class="project-tag">Ollama</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Integ/Rocky" target="_blank" class="project-link">View on GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3><i class="fas fa-stethoscope"></i> 生意诊室</h3>
+                        <span class="project-lang">TypeScript</span>
+                    </div>
+                    <p>Business Clinic — an AI business advisor for small shop owners. It collects revenue, margin and cost data step by step, computes gross profit and break-even, then uses an LLM to write an analysis, action items and follow-up questions.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">React</span>
+                        <span class="project-tag">Cloudflare Workers</span>
+                        <span class="project-tag">OpenAI API</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Integ/business-clinic" target="_blank" class="project-link">View on GitHub</a>
+                        <a href="https://vbot.eu.cc" target="_blank" class="project-link">Live Demo</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3><i class="fas fa-calculator"></i> fx-9750gii-ai-chat</h3>
+                        <span class="project-lang">C / Python</span>
+                    </div>
+                    <p>Chat with OpenAI or Claude on a Casio fx-9750GII graphing calculator. A gint add-in talks to a Python bridge on the Mac over USB; answers are rendered as 1-bit bitmaps, so even Chinese shows up on the 128px screen.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">gint</span>
+                        <span class="project-tag">libusb</span>
+                        <span class="project-tag">OpenAI / Claude</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Integ/fx-9750gii-ai-chat" target="_blank" class="project-link">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ml-archive">
+                <div class="terminal-line">
+                    <span class="prompt">$</span>
+                    <span class="command">ls ~/archive/machine-learning</span>
+                </div>
+                <div class="output">
+                    <a href="https://github.com/Integ/machine-learning" target="_blank">machine-learning/</a>
+                    <a href="https://github.com/Integ/ml-titanic" target="_blank">ml-titanic/</a>
+                    <a href="https://github.com/Integ/ml-stateofjs-2016" target="_blank">ml-stateofjs-2016/</a>
                 </div>
             </div>
         </section>
@@ -190,9 +297,10 @@
                         <span class="command">cat ~/profile.txt</span>
                     </div>
                     <div class="output">
-                        <p>My name is Jiang Shang, aka <a href="https://github.com/Integ">Integ</a>, a remote web developer/data engineer at <a href="http://vice.city">ViceCity</a>.</p>
+                        <p>My name is Jiang Shang, aka <a href="https://github.com/Integ">Integ</a>, co-founder &amp; CTO of <a href="https://spedagent.com">SPED Agent</a>, an AI work partner for special education schools.</p>
+                        <p>Previously a remote web developer/data engineer at <a href="http://vice.city">ViceCity</a>.</p>
                         <p>An <strong>Arch Linux fan</strong>, open source lover, MOOC enthusiast.</p>
-                        <p>Living in China with my lovely girlfriend illustrator <a href="https://dribbble.com/AdeleYa">Adele</a> and an adorable cat <a href="https://photos.app.goo.gl/PA9k623hd6V7oSvd7">Schrödinger</a>.</p>
+                        <p>Living in Victoria, BC with my lovely girlfriend illustrator <a href="https://dribbble.com/AdeleYa">Adele</a> and an adorable cat <a href="https://photos.app.goo.gl/PA9k623hd6V7oSvd7">Schrödinger</a>.</p>
                     </div>
                 </div>
 
@@ -205,7 +313,7 @@
                         </div>
                         <div class="interest-item">
                             <i class="fas fa-robot"></i>
-                            <span>Machine Learning</span>
+                            <span>AI Agents &amp; LLMs</span>
                         </div>
                         <div class="interest-item">
                             <i class="fas fa-drone"></i>
@@ -245,10 +353,10 @@
                         <span>GitHub</span>
                         <small>@Integ</small>
                     </a>
-                    <a href="mailto:integ@integ.cf" class="social-link">
+                    <a href="mailto:integ@integ.eu.cc" class="social-link">
                         <i class="fas fa-envelope"></i>
                         <span>Email</span>
-                        <small>integ@integ.cf</small>
+                        <small>integ@integ.eu.cc</small>
                     </a>
                     <a href="https://dribbble.com/AdeleYa" target="_blank" class="social-link">
                         <i class="fab fa-dribbble"></i>

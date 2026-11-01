@@ -217,6 +217,26 @@ body {
     margin-bottom: 1rem;
 }
 
+.subtitle a,
+.now-info a,
+.ml-archive a {
+    color: var(--terminal-amber);
+    text-decoration: none;
+}
+
+.subtitle a:hover,
+.now-info a:hover,
+.ml-archive a:hover {
+    text-decoration: underline;
+}
+
+/* Current Work */
+.now-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
 .typing-text {
     color: var(--terminal-amber);
     font-size: 1.1rem;
@@ -279,6 +299,7 @@ body {
 /* Sections */
 section {
     margin-bottom: 4rem;
+    scroll-margin-top: 80px;
 }
 
 .section-header {
@@ -400,6 +421,44 @@ section {
     background: var(--accent-color);
     color: var(--terminal-bg);
     box-shadow: 0 0 15px var(--accent-color);
+}
+
+/* AI Projects */
+.ai-projects .project-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.project-tag {
+    border: 1px solid var(--terminal-border);
+    color: var(--text-secondary);
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+}
+
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: auto;
+}
+
+.ml-archive {
+    margin-top: 2rem;
+}
+
+.ml-archive .output {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
 }
 
 /* About Section */
@@ -531,9 +590,25 @@ section {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .header {
+        padding: 1rem;
+    }
+
     .nav {
         flex-direction: column;
         gap: 1rem;
+    }
+
+    .nav-menu {
+        gap: 1.25rem;
+    }
+
+    section {
+        scroll-margin-top: 130px;
+    }
+
+    .command {
+        overflow-wrap: anywhere;
     }
     
     .main {
